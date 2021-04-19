@@ -19,6 +19,10 @@ const Banner = () => {
         fetchData()
     }, [])
 
+    const truncate = (str, num) => {
+        return str?.length > num ? str.substr(0, num - 1) + "..." : str 
+    }
+
     return (
         <header className="banner"
             style={{
@@ -30,13 +34,16 @@ const Banner = () => {
             }}
         >
             <div className="banner-contents">
-                <h1>
+                <h1 className="banner-title">
                     {movie?.title || movie?.name || movie?.original_name }
                 </h1>
                 <div className="banne-buttons">
                     <button className="banner-button">Play</button>
                     <button className="banner-button">More Info</button>
                 </div>
+                <h1 className='banner-description'>
+                    {truncate(movie?.overview, 150)}
+                </h1>
             </div>
         </header>
     )

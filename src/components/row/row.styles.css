@@ -1,5 +1,7 @@
 .row {
     margin-left: 20px;
+    margin-top: -65px;
+    padding-bottom: 80px;
 }
 
 .row-covers::-webkit-scrollbar{
@@ -10,7 +12,7 @@
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 20px;
+    padding: 10px;
 }
 
 .row-cover {
@@ -23,7 +25,8 @@
 }
 
 .row-cover:hover {
-    transform: scale(1.08);
+    transform: scale(1.18);
+    overflow: visible;
 }
 
 .row-coverLarge {
