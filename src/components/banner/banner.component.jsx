@@ -35,7 +35,7 @@ const Banner = () => {
                 </h1>
                 <div className="banne-buttons">
                     <button className="banner-button">Play</button>
-                    <button className="banner-button">More Info</button>
+                    <button className="banner-button">More Info</button >
                 </div>
             </div>
         </header>
