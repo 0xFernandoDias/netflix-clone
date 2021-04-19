@@ -1,0 +1,31 @@
+.row {
+    margin-left: 20px;
+}
+
+.row-covers::-webkit-scrollbar{
+    display: none;
+}
+
+.row-covers {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row-cover {
+    object-fit: contain;
+    width: 100%;
+    max-height: 140px;
+    margin-right: 3px;
+    border-radius: 1%;
+    transition: transform 450ms;
+}
+
+.row-cover:hover {
+    transform: scale(1.08);
+}
+
+.row-coverLarge {
+    max-height: 377px;
+}
