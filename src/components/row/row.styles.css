@@ -1,7 +1,8 @@
 .row {
     margin-left: 20px;
-    margin-top: -65px;
-    padding-bottom: 80px;
+    margin-top: -85px;
+    padding-bottom: 110px;
+    color: white;
 }
 
 .row-covers::-webkit-scrollbar{
@@ -21,7 +22,8 @@
     max-height: 140px;
     margin-right: 3px;
     border-radius: 1%;
-    transition: transform 450ms;
+    transition: transform 350ms;
+    overflow: visible;
 }
 
 .row-cover:hover {
@@ -31,4 +33,9 @@
 
 .row-coverLarge {
     max-height: 377px;
+}
+
+.title {
+    color: #e5e5e5;
+    font-weight: 700;
 }

@@ -37,14 +37,16 @@ const Banner = () => {
                 <h1 className="banner-title">
                     {movie?.title || movie?.name || movie?.original_name }
                 </h1>
-                <div className="banne-buttons">
-                    <button className="banner-button">Play</button>
-                    <button className="banner-button">More Info</button>
-                </div>
                 <h1 className='banner-description'>
                     {truncate(movie?.overview, 150)}
                 </h1>
+                <div className="banne-buttons">
+                    <button className="banner-button1"><i class="fas fa-play"/> Play</button>
+                    <button className="banner-button2"><i class="fas fa-info-circle"/> More Info</button>
+                </div>
             </div>
+
+            <div className="banner-fadeBottom" />
         </header>
     )
 }

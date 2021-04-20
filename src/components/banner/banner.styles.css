@@ -1,7 +1,7 @@
 .banner {
-    color: white;
+    color: #fff;
     object-fit: contain;
-    height: 528px;
+    height: 548px;
 }
 
 .banner-contents {
@@ -14,6 +14,7 @@
     font-size: 3rem;
     font-weight: 800;
     padding-bottom: 0.3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
 }
 
 .banner-description {
@@ -23,19 +24,64 @@
     font-size: 0.8rem;
     max-width: 360px;
     height: 80px;
+    font-weight: 400;
+    width: 100%;
+    font-size: 1.4vw;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+    margin-bottom: 30px;
 }
 
-.banner-button {
+.banner-button1 {
+    width: 160px;
+    height: 40px;
     cursor: pointer;
-    color: #fff;
+    color: black;
     outline: none;
     border: none;
-    font-weight: 700;
+    font-weight: bold;
     border-radius: 0.2vw;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-right: 1rem;
     padding-top: 0.5rem;
-    background-color: rgba(51, 51, 51, 0.5);
+    background-color: white;
     padding-bottom: 0.5rem;
+}
+
+.banner-button2 {
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    background-color: rgba(109,109,110,0.4);
+    padding-bottom: 0.5rem;
+}
+
+.banner-button1:hover {
+    background-color: gray;
+    transition: all 0.2s;
+}
+
+.banner-button2:hover {
+    background-color: rgba(0,0,0,.45);
+    transition: all 0.2s;
+}
+
+.banner-fadeBottom{
+    height: 7.4rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        #141414
+    );
+    margin-top: 105px;
 }

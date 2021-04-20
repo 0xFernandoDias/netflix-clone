@@ -6,7 +6,7 @@ import requests from './utils/requests'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Banner />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
