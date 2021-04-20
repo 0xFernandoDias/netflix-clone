@@ -24,6 +24,7 @@ const Banner = () => {
     }
 
     return (
+        
         <header className="banner"
             style={{
                 backgroundSize: 'cover',
@@ -41,12 +42,14 @@ const Banner = () => {
                     {truncate(movie?.overview, 150)}
                 </h1>
                 <div className="banne-buttons">
-                    <button className="banner-button1"><i class="fas fa-play"/> Play</button>
-                    <button className="banner-button2"><i class="fas fa-info-circle"/> More Info</button>
+                    <button className="banner-button1"><i className="fas fa-play"/> Play</button>
+                    <button className="banner-button2"><i className="fas fa-info-circle"/> More Info</button>
                 </div>
             </div>
 
-            <div className="banner-fadeBottom" />
+            <div className="banner-fadeBottom">
+                <div className="banner-fadeLeft" />
+            </div>
         </header>
     )
 }

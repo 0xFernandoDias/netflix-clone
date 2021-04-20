@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.foo-spa {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
