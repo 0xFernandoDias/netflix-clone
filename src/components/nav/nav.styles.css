@@ -6,7 +6,7 @@
     width: 100%;
     padding: 20px;
     height: 20px;
-    z-index: 1;
+    z-index: 100;
     transition-timing-function: ease-in;
     transition: all 0.2s;
 }
@@ -20,6 +20,7 @@
     left: 40px;
     width: 80px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .nav-ul{
@@ -31,9 +32,17 @@
 
 .nav-li{
     display: block;
-    list-style-type: none;
     margin-left: 18px;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-li2 {
+    display: block;
+    font-size: 14px;
+    padding-right: 30px;
+    align-items: center;
+    cursor: pointer;
 }
 
 .a-nav{
@@ -43,11 +52,22 @@
     align-items: center;
     height: 100%;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav-avatar {
-    position: fixed;
+    position: flex;
     right: 40px;
     width: 30px;
     object-fit: contain;
+    cursor: pointer;
+}
+
+.nav-right {
+    margin-right: 50px;
+    justify-content: flex-end;
+    display: flex;
+    color: white;
+    align-items: center;
+    cursor: pointer;
 }

@@ -3,6 +3,8 @@ import axios from '../../utils/axios'
 import '../row/row.styles.css'
 import YouTube from 'react-youtube'
 import movieTrailer from 'movie-trailer'
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 const base_url = "https://image.tmdb.org/t/p/original/"
 
@@ -44,6 +46,12 @@ function Row({ title, fetchUrl, isLargeRow }) {
     return (
         <div className='row'>
             <h3 className="title">{title}</h3>
+            <div className={`${isLargeRow ? "row-leftLarge" : "row-left"}`} >
+                <NavigateBeforeIcon style={{fontSize:50}} />
+            </div>
+            <div className={`${isLargeRow ? "row-rightLarge" : "row-right"}`} >
+                <NavigateNextIcon style={{fontSize:50}} />
+            </div>
             <div className="row-covers">
                 {movies.map((movie) => (
                     <img
