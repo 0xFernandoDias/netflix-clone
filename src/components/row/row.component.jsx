@@ -18,7 +18,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
     return (
         <div className='row'>
-            <h2 className="title">{title}</h2>
+            <h3 className="title">{title}</h3>
             <div className="row-covers">
                 {movies.map((movie) => (
                     <img
